@@ -8,7 +8,6 @@ import java.time.LocalDate;
 @Entity
 @Table(name = "tbl_Tarefas")
 public class TarefaModel {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
@@ -27,6 +26,10 @@ public class TarefaModel {
         this.descricao = descricao;
         this.dataDeVencimento = dataDeVencimento;
         this.concluido = concluido;
+    }
+
+    public TarefaModel() {
+
     }
 
 
